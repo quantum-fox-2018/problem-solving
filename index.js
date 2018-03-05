@@ -30,11 +30,9 @@ function checkJadwal(member){
                     today += member[j][0] +', '
                 }
             }
-            // console.log(today)
             console.log(today.slice(0, today.length-2)) 
         }
     }
-    // return today
 }
 
 checkJadwal(member)
