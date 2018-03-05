@@ -59,5 +59,4 @@ function schedule(){
     console.log(tampung);
   }
 }
-
 schedule();
