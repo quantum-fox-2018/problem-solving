@@ -1,6 +1,7 @@
 // PSEUDOCODE
 // STORE variable str equals to tempat fitness tutup in string
 // STORE variable tanggal equals to 6
+// STORE variable arrName as array with Tono, Anton, Budi in string inside
 //
 // FOR variable dateNum equals to 0 with condition dateNum smaller than equals to 24, dateNum add 1 for each loop
 //  tanggal add equals to 1
