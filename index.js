@@ -36,7 +36,7 @@ function fitnesSchedul(value){
 let objSchedule = [
     {name: 'Tono', schedule: 2},
     {name: 'Anton', schedule: 4},
-    {name: 'Budi', schedule: 5},
+    {name: 'Budi', schedule: 5}, 
     {name: 'Yosa', schedule: 3}
 ];
 
