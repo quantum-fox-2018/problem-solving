@@ -19,29 +19,36 @@ initiate hari value 0
   angka add by 1 each iteration
 */
 
-var start=7
-var end =31
-var tglOpen=7
-var hari = 0
-  for (var tgl = start; tgl <= end  ; tgl++) {
-    var listMember=[];
-    if(tgl % 5 ==0){
-      listMember.push('tanggal '+tgl+': tempat fitnes tutup')
-    }else{
-      var member = 'tanggal '+tgl+': '
-      if(hari%2==0){
-        member +='tono '
-      }
-      if(hari%4==0){
-        member+='anton '
-      }
-      if(hari%5==0){
-        member+='budi'
-      }
-      listMember.push(member)
-      hari++
-    }
-    console.log(listMember.join());
-  }
+function problemSolving(listJadwal) {
+    var hariPertama = 7;
+    var end = 31;
 
-console.log('ubah data agar masuk ke git')
+    for (var i = hariPertama; i <= end; i++) {
+        var hasil = '';
+        var peserta = [];
+        var jadwalPeserta = i - hariPertama;
+
+        if (i % 5 === 0) {
+            console.log('Tanggal '+ i+': Tempat Fitness Tutup')
+        } else {
+            for (var j = 0; j < listJadwal.length; j++) {
+              //console.log(jadwalPeserta)
+                if (jadwalPeserta % listJadwal[j][1] === 0) {
+
+                    peserta.push(listJadwal[j][0]);
+                }
+            }
+
+            hasil = peserta.join(', ');
+            console.log('Tanggal '+i+':'+hasil);
+        }
+    }
+}
+
+
+problemSolving([
+    ['Tono', 2],
+    ['Anton', 4],
+    ['Budi', 5],
+    ['Mamat', 3]
+]);
