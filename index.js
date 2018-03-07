@@ -20,22 +20,22 @@
 
 var str = "Tempat Fitness Tutup";
 var tanggal = 6;
-var arrName = ["Tono", "Anton", "Budi"]
 
 for(var dateNum = 0; dateNum <= 24; dateNum++) {
   tanggal+=1;
   var result = [];
   if(tanggal % 5 === 0) {
     result.push(str);
+  } else {
+    if(dateNum % 2 === 0) {
+      result.push("Tono");
+    }
+    if(dateNum % 4 === 0) {
+      result.push("Anton");
+    }
+    if(dateNum % 5 === 0) {
+      result.push("Budi");
+    }
   }
-  if(dateNum % 2 === 0) {
-    result.push(arrName[0]);
-  }
-  if(dateNum % 4 === 0) {
-    result.push(arrName[1]);
-  }
-  if(dateNum % 5 === 0) {
-    result.push(arrName[2]);
-  }
-  console.log("Tanggal " + tanggal + " : " + result);
+  console.log("Tanggal " + tanggal + " : " + result.join(", "));
 }
