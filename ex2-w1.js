@@ -1,3 +1,14 @@
+//Problem Solving
+/*
+Summary
+-Tono, 2 hari sekali
+-anton, 4 hari sekali
+-Budi 5 hari sekali
+
+tanggal mulai dari 7 sampai maksimal 31 hari dalam 1 bulan
+libur tiap 5 hari sekali
+*/
+
 /*Pseudocode
 SET 'tglAwal' with 7
 SET 'libur' with 5
@@ -85,3 +96,25 @@ for(let i = tglAwal; i <= 31; i++){
     let joinTemp = temp.join(',');
     console.log("Tanggal "+i+": "+joinTemp);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
